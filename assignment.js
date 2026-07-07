@@ -383,7 +383,14 @@ console.log("Q13: ", biggestStringLength(word1, word2));
 //  Q14 random number: 1
 
 // PUT YOUR CODE HERE
+function returnRandomNum() {
+    let number = Math.floor(Math.random() * 3 + 1);
+    return number
+}
 
+console.log("Q14 random number: ", returnRandomNum());
+console.log("Q14 random number: ", returnRandomNum());
+console.log("Q14 random number: ", returnRandomNum());
 
 // ---------- QUESTION 15 ----------
 // Magic8Ball
@@ -403,3 +410,18 @@ console.log("Q13: ", biggestStringLength(word1, word2));
 //  Q15 Magic 8 Ball: Absolutely not
 
 // PUT YOUR CODE HERE
+function shakeMagic8Ball() {
+    let number = returnRandomNum()
+    if (number === 1) {
+        return "It is certain"
+    }
+    else if (number === 2) {
+        return "Perhaps"
+    }
+    else {
+        return "Absolutely not"
+    }
+}
+console.log("Q15 Magic 8 Ball: ", shakeMagic8Ball());
+console.log("Q15 Magic 8 Ball: ", shakeMagic8Ball());
+console.log("Q15 Magic 8 Ball: ", shakeMagic8Ball());
