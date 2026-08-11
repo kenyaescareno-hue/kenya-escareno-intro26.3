@@ -44,19 +44,30 @@ section {
     padding: 20px;
 }
 
-#Experience ul {
+#Experience {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 0;
+    gap: 20px;
 }
 
-#Experience li {
+.experience-item {
     background-color: white;
     padding: 15px;
-    margin: 0;
-    list-style: none;
     border-radius: 8px;
+}
+
+.experience-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-title h3 {
+    margin: 0;
+}
+
+.experience-title p {
+    margin: 0;
 }
 
 #Connect {
