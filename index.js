@@ -1,4 +1,3 @@
-javascript
 const skills = ["art", "writing", "JavaScript", "GitHub", "Adobe Photoshop"];
 
 const skillsList = document.querySelector('#Skills ul');
