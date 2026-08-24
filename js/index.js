@@ -2,11 +2,11 @@ const skills = ["art", "writing", "JavaScript", "GitHub", "Adobe Photoshop"];
 
 const skillsList = document.querySelector('#Skills ul');
 
-skills.forEach(function(skill) {
+for (let i = 0; i < skills.length; i++) {
     const li = document.createElement('li');
-    li.textContent = skill;
+    li.textContent = skills[i];
     skillsList.appendChild(li);
-});
+}
 
 const today = new Date();
 const thisYear = today.getFullYear();
