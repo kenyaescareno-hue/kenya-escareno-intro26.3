@@ -145,6 +145,23 @@ section {
     cursor: pointer;
 }
 
+/* Lesson 9 - Projects */
+
+#Projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#Projects li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 200px;
+}
+
 @media (max-width: 600px) {
     #leave-message input,
     #leave-message textarea,
