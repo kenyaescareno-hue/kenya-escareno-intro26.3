@@ -49,21 +49,15 @@ messageForm.addEventListener("submit", (event) => {
     messageForm.reset();
 });
 
+const projectSection = document.querySelector("#Projects");
+const projectList = projectSection.querySelector("ul");
+
 fetch("https://api.github.com/users/kenyaescareno-hue/repos")
     .then((response) => {
-        if (!response.ok) {
-            throw new Error("Request failed");
-        }
-
         return response.json();
     })
-    .then((data) => {
-        const repositories = data;
-
+    .then((repositories) => {
         console.log(repositories);
-
-        const projectSection = document.querySelector("#Projects");
-        const projectList = projectSection.querySelector("ul");
 
         for (let i = 0; i < repositories.length; i++) {
             const project = document.createElement("li");
@@ -74,10 +68,7 @@ fetch("https://api.github.com/users/kenyaescareno-hue/repos")
     .catch((error) => {
         console.error("An error occurred:", error);
 
-        const projectSection = document.querySelector("#Projects");
-        const projectList = projectSection.querySelector("ul");
-
         const errorMessage = document.createElement("li");
-        errorMessage.innerText = "Projects could not be loaded.";
+        errorMessage.innerText = "Unable to load GitHub repositories — the request to the server failed.";
         projectList.appendChild(errorMessage);
     });
