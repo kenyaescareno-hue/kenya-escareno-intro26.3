@@ -1,6 +1,7 @@
 const dogImage = document.getElementById("dog-image");
 const breedDetails = document.getElementById("breed-details");
 const newDogButton = document.getElementById("new-dog-button");
+const newBreedButton = document.getElementById("new-breed-button");
 
 function getRandomDog() {
     fetch("https://dog.ceo/api/breeds/image/random")
@@ -43,5 +44,8 @@ getRandomBreed();
 
 newDogButton.addEventListener("click", () => {
     getRandomDog();
+});
+
+newBreedButton.addEventListener("click", () => {
     getRandomBreed();
 });
