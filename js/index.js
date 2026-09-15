@@ -1,3 +1,4 @@
+// Skills
 const skills = ["art", "writing", "JavaScript", "GitHub", "Adobe Photoshop"];
 
 const skillsList = document.querySelector('#Skills ul');
@@ -8,6 +9,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(li);
 }
 
+// Footer
 const today = new Date();
 const thisYear = today.getFullYear();
 
@@ -16,6 +18,7 @@ const copyright = document.createElement('p');
 copyright.textContent = `© ${thisYear} Kenya Escareno`;
 footer.appendChild(copyright);
 
+// Leave a Message
 const messageForm = document.forms["leave_message"];
 
 messageForm.addEventListener("submit", (event) => {
@@ -49,6 +52,7 @@ messageForm.addEventListener("submit", (event) => {
     messageForm.reset();
 });
 
+// GitHub Projects
 const projectSection = document.querySelector("#Projects");
 const projectList = projectSection.querySelector("ul");
 
