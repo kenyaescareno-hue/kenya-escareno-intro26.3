@@ -135,10 +135,17 @@ section {
     text-decoration: underline;
 }
 
+#messages ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
 #messages li {
     margin-bottom: 10px;
 }
-
 #messages button {
     margin-left: 10px;
     padding: 6px 10px;
